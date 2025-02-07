@@ -3,6 +3,11 @@
   background: #2c3e50;
   color: white;
   padding: var(--space-md);
+  position: fixed;
+  left: -250px; /* Sidebar standaard verborgen */
+  top: 0;
+  height: 100vh;
+  transition: left 0.3s ease-in-out;
 }
 
 .sidebar h2 {
@@ -29,4 +34,12 @@
 
 .sidebar a:hover {
   background: var(--color-secondary);
+}
+
+.sidebar.open {
+  left: 0; /* Sidebar verschijnt */
+}
+
+.sidebar.closed {
+  left: -250px; /* Sidebar verdwijnt */
 }
