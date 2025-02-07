@@ -1,0 +1,20 @@
+@import '@/styles/reset.css';
+@import '@/styles/variables.css';
+
+/* Hoofdcontainer */
+.app {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: var(--space-md);
+  flex-grow: 1;
+}
