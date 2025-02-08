@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
-import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar";
-import Footer from "@/components/Footer";
 import { SidebarProvider } from "@/context/SidebarContext";
+import MainLayout from "@/components/layout/MainLayout";
 
 export const metadata: Metadata = {
   title: "Dashboard App",
@@ -17,14 +15,7 @@ export default function RootLayout({
     <html lang="nl">
       <body>
         <SidebarProvider>
-          <div className="app">
-            <Sidebar />
-            <div className="main-content">
-              <Navbar />
-              <main className="content">{children}</main>
-              <Footer />
-            </div>
-          </div>
+          <MainLayout>{children}</MainLayout>
         </SidebarProvider>
       </body>
     </html>

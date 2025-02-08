@@ -10,8 +10,14 @@
 
 .main-content {
   flex: 1;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.main-content.shrink {
+  margin-left: 250px;
 }
 
 .content {
