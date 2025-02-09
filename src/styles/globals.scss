@@ -1,28 +1,29 @@
-// Full Bootstrap SCSS Import
-// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+// Custom.scss
+// Full Bootstrap SCSS Import using @import
+
+// 1. Include banner
+@import "bootstrap/scss/mixins/banner";
+@include bsBanner("");
+
+// scss-docs-start import-stack
+// Configuration
 @import "bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
 
-// 3. Include required Bootstrap stylesheets (including color mode stylesheets)
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
-
-// 4. Include any default map overrides here
-
-// 5. Include required parts
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
-@import "bootstrap/scss/root";
-
-// 6. Include all Bootstrap components
 @import "bootstrap/scss/utilities";
+
+// Layout & components
+@import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/type";
 @import "bootstrap/scss/images";
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
-@import "bootstrap/scss/helpers";
 @import "bootstrap/scss/tables";
 @import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
@@ -49,8 +50,11 @@
 @import "bootstrap/scss/offcanvas";
 @import "bootstrap/scss/placeholders";
 
-// 7. Include utilities API last to generate classes
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
 @import "bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
 
-// 8. Add additional custom code here
-
+// Add additional custom code here
