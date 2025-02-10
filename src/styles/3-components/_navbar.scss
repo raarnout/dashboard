@@ -1,0 +1,17 @@
+.navbar {
+  height: $navbar-height;
+  background: $primary-color;
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar button {
+  background: darken($primary-color, 10%);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import Sidebar from "@/components/Sidebar";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function LayoutWrapper({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -13,14 +15,9 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
     <div className={`wrapper ${isSidebarOpen ? "sidebar-open" : ""}`}>
       <Sidebar isOpen={isSidebarOpen} />
       <div className="main">
-        <nav className="navbar">
-          <button className="btn btn-primary" onClick={toggleSidebar}>
-            {isSidebarOpen ? "Close Menu" : "Open Menu"}
-          </button>
-          <h1>Page Title</h1>
-        </nav>
+        <Navbar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
         <main className="content">{children}</main>
-        <footer className="footer">© 2024 Company Name</footer>
+        <Footer />
       </div>
     </div>
   );

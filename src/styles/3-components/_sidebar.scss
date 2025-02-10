@@ -1,0 +1,18 @@
+$sidebar-width: 250px;
+
+.sidebar {
+  width: $sidebar-width;
+  height: 100vh;
+  background: #343a40;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: -$sidebar-width;
+  transition: left 0.3s ease-in-out;
+  padding: 1rem;
+}
+
+/* Show sidebar when open */
+.sidebar-open .sidebar {
+  left: 0;
+}
