@@ -13,7 +13,7 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
 
   return (
     <div className={`wrapper ${isSidebarOpen ? "sidebar-open" : ""}`}>
-      <Sidebar isOpen={isSidebarOpen} />
+      <Sidebar isOpen={isSidebarOpen} /> {/* ✅ isOpen wordt correct doorgegeven */}
       <div className="main">
         <Navbar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
         <main className="content">{children}</main>
