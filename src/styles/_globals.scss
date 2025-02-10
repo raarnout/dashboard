@@ -58,3 +58,39 @@
 // scss-docs-end import-stack
 
 // Add additional custom code here
+
+$sidebar-width: 250px;
+
+.wrapper {
+  display: flex;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* Sidebar hidden by default */
+.sidebar {
+  width: $sidebar-width;
+  height: 100vh;
+  background: #343a40;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: -$sidebar-width;
+  transition: left 0.3s ease-in-out;
+  padding: 1rem;
+}
+
+/* Show sidebar when open */
+.sidebar-open .sidebar {
+  left: 0;
+}
+
+/* Move entire main content */
+.main {
+  flex-grow: 1;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* When sidebar is open, shift main content */
+.sidebar-open .main {
+  margin-left: $sidebar-width;
+}
