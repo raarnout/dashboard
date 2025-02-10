@@ -7,6 +7,7 @@
 @import "3-components/navbar";
 @import "3-components/footer";
 @import "3-components/sidebar";
+@import "3-components/404";
 
 .wrapper {
   display: flex;
@@ -15,17 +16,19 @@
   transition: margin-left 0.3s ease-in-out;
 }
 
-/* Move entire main content */
 .main {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   transition: margin-left 0.3s ease-in-out;
 }
 
 .content {
-  flex-grow: 1;
+  flex-grow: 1; // ✅ Zorgt ervoor dat de content altijd de resterende ruimte opvult
+  display: flex;
+  flex-direction: column;
 }
+
 
 /* When sidebar is open, shift main content */
 .sidebar-open .main {
