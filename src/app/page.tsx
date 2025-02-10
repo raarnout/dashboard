@@ -1,15 +1,10 @@
-import styles from "./page.module.scss";
+import Offcanvas from "@/components/Offcanvas";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main>
-        <button className="btn btn-primary">primary</button>
-        <button className="btn btn-secondary">secondary</button>
-        <button className="btn btn-warning">warning</button>
-        <button className="btn btn-danger">danger</button>
-      </main>
-      <footer></footer>
-    </div>
+    <main className="container py-5">
+      <h1 className="mb-4">Next.js + Bootstrap Offcanvas</h1>
+      <Offcanvas /> {/* ✅ Now you have a working offcanvas! */}
+    </main>
   );
 }

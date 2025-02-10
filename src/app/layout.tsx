@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "@/styles/globals.scss";
+import "@/styles/_globals.scss";
+import BootstrapClient from "@/components/BootstrapClient";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <BootstrapClient/>
         {children}
       </body>
     </html>
