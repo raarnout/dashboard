@@ -1,6 +1,6 @@
 import "@/styles/_globals.scss";
 import BootstrapClient from "@/components/BootstrapClient";
-import LayoutWrapper from "@/components/LayoutWrapper";
+import PageLayout from "@/components/PageLayout";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <BootstrapClient />
-        <LayoutWrapper>{children}</LayoutWrapper> {/* ✅ Alleen de content wisselt */}
+        <PageLayout>{children}</PageLayout> {/* ✅ Alleen de content wisselt */}
       </body>
     </html>
   );

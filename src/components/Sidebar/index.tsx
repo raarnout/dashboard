@@ -8,10 +8,10 @@ interface SidebarProps {
 export default function Sidebar({ isOpen }: SidebarProps) {
   return (
     <aside className={`sidebar ${isOpen ? "sidebar-open" : ""}`}>
-      <div className="offcanvas-header">
-        <h5 className="offcanvas-title">Sidebar Menu</h5>
-      </div>
-      <div className="offcanvas-body">
+      <span className="sidebar-title">
+        Dashboard
+      </span>
+      <div className="">
         <ul>
           <li><Link href="/dashboard">Dashboard</Link></li>
           <li> <Link href="/settings">Settings</Link></li>

@@ -22,32 +22,32 @@
 @import "bootstrap/scss/type"; /* Defines typography styles (fonts, sizes, line-heights) */
 @import "bootstrap/scss/containers"; /* Defines responsive container classes */
 @import "bootstrap/scss/grid"; /* Defines Bootstrap’s responsive grid system */
-/* @import "bootstrap/scss/images"; */ /* Styles images (responsive images, alignment, etc.) */
-/* @import "bootstrap/scss/tables"; */ /* Styles tables with Bootstrap design */
-/* @import "bootstrap/scss/forms"; */ /* Defines form elements and layout */
+@import "bootstrap/scss/images"; /* Styles images (responsive images, alignment, etc.) */
+@import "bootstrap/scss/tables"; /* Styles tables with Bootstrap design */
+@import "bootstrap/scss/forms"; /* Defines form elements and layout */
 @import "bootstrap/scss/buttons"; /* Styles Bootstrap buttons */
 @import "bootstrap/scss/transitions"; /* Adds smooth animations and transitions */
-/* @import "bootstrap/scss/dropdown"; */ /* Styles dropdown menus */
-/* @import "bootstrap/scss/button-group"; */ /* Groups buttons together with styles */
+@import "bootstrap/scss/dropdown"; /* Styles dropdown menus */
+@import "bootstrap/scss/button-group"; /* Groups buttons together with styles */
 @import "bootstrap/scss/nav"; /* Styles navigation elements */
 @import "bootstrap/scss/navbar"; /* Defines styles for Bootstrap's navbar */
-/* @import "bootstrap/scss/card"; */ /* Styles Bootstrap's card component */
-/* @import "bootstrap/scss/accordion"; */ /* Defines styles for collapsible accordion components */
-/* @import "bootstrap/scss/breadcrumb"; */ /* Styles breadcrumb navigation */
-/* @import "bootstrap/scss/pagination"; */ /* Defines pagination styles */
-/* @import "bootstrap/scss/badge"; */ /* Styles small badges (e.g., notification bubbles) */
-/* @import "bootstrap/scss/alert"; */ /* Defines alert message styles */
-/* @import "bootstrap/scss/progress"; */ /* Styles progress bars */
-/* @import "bootstrap/scss/list-group"; */ /* Defines list group styles */
-/* @import "bootstrap/scss/close"; */ /* Styles close buttons */
-/* @import "bootstrap/scss/toasts"; */ /* Defines toast notifications */
-/* @import "bootstrap/scss/modal"; */ /* Styles Bootstrap modals */
-/* @import "bootstrap/scss/tooltip"; */ /* Defines tooltip styles */
-/* @import "bootstrap/scss/popover"; */ /* Styles popovers (tooltip with additional content) */
-/* @import "bootstrap/scss/carousel"; */ /* Styles Bootstrap’s carousel/slideshow */
-/* @import "bootstrap/scss/spinners"; */ /* Defines loading spinners */
+@import "bootstrap/scss/card"; /* Styles Bootstrap's card component */
+@import "bootstrap/scss/accordion"; /* Defines styles for collapsible accordion components */
+@import "bootstrap/scss/breadcrumb"; /* Styles breadcrumb navigation */
+@import "bootstrap/scss/pagination"; /* Defines pagination styles */
+@import "bootstrap/scss/badge"; /* Styles small badges (e.g., notification bubbles) */
+@import "bootstrap/scss/alert"; /* Defines alert message styles */
+@import "bootstrap/scss/progress"; /* Styles progress bars */
+@import "bootstrap/scss/list-group"; /* Defines list group styles */
+@import "bootstrap/scss/close"; /* Styles close buttons */
+@import "bootstrap/scss/toasts"; /* Defines toast notifications */
+@import "bootstrap/scss/modal"; /* Styles Bootstrap modals */
+@import "bootstrap/scss/tooltip"; /* Defines tooltip styles */
+@import "bootstrap/scss/popover"; /* Styles popovers (tooltip with additional content) */
+@import "bootstrap/scss/carousel"; /* Styles Bootstrap’s carousel/slideshow */
+@import "bootstrap/scss/spinners"; /* Defines loading spinners */
 @import "bootstrap/scss/offcanvas"; /* Styles the offcanvas sidebar component */
-/* @import "bootstrap/scss/placeholders"; */ /* Defines Bootstrap placeholder styles */
+@import "bootstrap/scss/placeholders"; /* Defines Bootstrap placeholder styles */
 
 // Helpers
 @import "bootstrap/scss/helpers"; /* Provides helper classes for spacing, text alignment, etc. */
