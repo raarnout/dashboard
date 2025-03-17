@@ -8,6 +8,7 @@
   left: -$sidebar-width;
   transition: left 0.3s ease-in-out;
   padding: 1.5rem 1.25rem;
+  @include z-index("sidebar");
 
   &-title {
     color: #f8f9fa;

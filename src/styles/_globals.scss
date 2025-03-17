@@ -4,33 +4,11 @@
 // Bootstrap
 @import "./bootstrap";
 
-@import "3-components/navbar";
-@import "3-components/footer";
-@import "3-components/sidebar";
-@import "3-components/404";
+// Mixins
+@import "./2-mixins/all";
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  transition: margin-left 0.3s ease-in-out;
-}
+// Components
+@import "./3-components/all";
 
-.main {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  transition: margin-left 0.3s ease-in-out;
-}
-
-.content {
-  flex-grow: 1; // ✅ Zorgt ervoor dat de content altijd de resterende ruimte opvult
-  display: flex;
-  flex-direction: column;
-}
-
-
-/* When sidebar is open, shift main content */
-.sidebar-open .main {
-  margin-left: $sidebar-width;
-}
+// Pages
+@import "./6-page/all"

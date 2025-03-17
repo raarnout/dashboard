@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <BootstrapClient />
-        <PageLayout>{children}</PageLayout> {/* ✅ Alleen de content wisselt */}
+        <PageLayout>{children}</PageLayout>
       </body>
     </html>
   );

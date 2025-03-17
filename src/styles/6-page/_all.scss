@@ -1,0 +1,29 @@
+// Pages
+@import "../../app/not-found/not-found";
+
+// Genaral styling
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  .content {
+    flex-grow: 1; // ✅ Zorgt ervoor dat de content altijd de resterende ruimte opvult
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  /* When sidebar is open, shift main content */
+  .sidebar-open .main {
+    margin-left: $sidebar-width;
+  }
