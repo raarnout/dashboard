@@ -1,6 +1,6 @@
 .navbar {
   height: $navbar-height;
-  background: $primary-color;
+  background: $primary;
   color: white;
   padding: 0 20px;
   display: flex;
@@ -9,7 +9,7 @@
 }
 
 .navbar button {
-  background: darken($primary-color, 10%);
+  background: darken($primary, 10%);
   color: white;
   border: none;
   padding: 0.5rem 1rem;

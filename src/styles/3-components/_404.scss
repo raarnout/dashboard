@@ -6,13 +6,12 @@
   justify-content: center;
   text-align: center;
   background-color: $background-color;
-  color: $text-color;
 
   h1 {
     font-size: 6rem;
     font-weight: bold;
     margin: 0;
-    color: $primary-color;
+    color: $primary;
   }
 
   p {
@@ -21,7 +20,7 @@
   }
 
   .btn {
-    background: $primary-color;
+    background: $primary;
     color: white;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
@@ -30,7 +29,7 @@
     transition: background 0.3s;
 
     &:hover {
-      background: darken($primary-color, 10%);
+      background: darken($primary, 10%);
     }
   }
 }

@@ -9,6 +9,8 @@
 @import "bootstrap/scss/functions"; /* Defines essential SCSS functions for calculations */
 
 // 2. Include any default variable overrides here
+@import "1-variables/variables"; /* Overwrite default bootstrap variables from node package */
+@import "1-variables/variables-dark"; /* Overwrite default bootstrap variables-dark from node package */
 
 @import "bootstrap/scss/variables"; /* Defines Bootstrap global variables */
 @import "bootstrap/scss/variables-dark"; /* Provides dark mode specific variables */
